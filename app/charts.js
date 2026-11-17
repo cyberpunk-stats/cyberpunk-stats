@@ -1,6 +1,6 @@
 // D3 chart library for the Streamlit dashboard. Each chart is drawn into its own iframe by charts.py,
-// which sets window.SPEC and calls CHARTS[SPEC.type](root, SPEC). Charts redraw on resize, and the iframe
-// resizes itself to fit the chart.
+// which sets window.SPEC and calls CHARTS[SPEC.type](root, SPEC). Charts redraw on resize; Streamlit sizes the
+// iframe to its content (st.iframe height="content").
 //
 // Narrow screens (< NARROW_PX): row labels move onto their own line above the mark, values go to the right end
 // of that line, and the marks use the full width.
@@ -342,25 +342,21 @@
 
   window.CHARTS = { segmented, dumbbell, heatmap, stacked, sankey, ranges, hbars, columns };
 
-  // The iframe is same-origin (st.iframe with an HTML string), so it can size itself to the chart. This keeps
-  // narrow layouts, which are taller, from being clipped by the height Python estimated for wide screens.
-  function fitFrame() {
-    const fe = window.frameElement;
-    if (!fe) return;
-    const h = Math.ceil(document.getElementById("root").getBoundingClientRect().height) + 6;
-    fe.style.height = `${h}px`;
-    fe.setAttribute("height", h);
-    // Streamlit's wrapper keeps the original height through its own CSS; without this the chart spills over
-    // whatever comes after it.
-    const box = fe.closest('[data-testid="stElementContainer"]');
-    if (box) box.style.height = `${h}px`;
+  // Streamlit's own size script (st.iframe height="content") takes the max of several measurements, including
+  // documentElement.scrollHeight, which never drops below the frame's current height. Frames can grow but not
+  // shrink, so a chart that gets shorter after a toggle leaves a gap. Report the chart's true height in the same
+  // message format, after Streamlit's own report; once the frame matches, both measurements agree.
+  function reportSize() {
+    const h = Math.ceil(document.getElementById("root").getBoundingClientRect().height);
+    window.parent.postMessage({ type: "streamlit:iframe:setSize", width: document.documentElement.clientWidth, height: h }, "*");
   }
 
   function draw() {
     const root = document.getElementById("root");
     root.innerHTML = "";
     window.CHARTS[window.SPEC.type](root, window.SPEC);
-    fitFrame();
+    setTimeout(reportSize, 0);
+    setTimeout(reportSize, 250);
   }
   let last = 0;
   window.addEventListener("resize", () => {

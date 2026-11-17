@@ -53,8 +53,9 @@ def _js() -> str:
     return (Path(__file__).parent / "charts.js").read_text()
 
 
-def render(spec: dict, height: int) -> None:
-    """Draw spec["type"] (a chart in charts.js) with the rest of spec as its data."""
+def render(spec: dict) -> None:
+    """Draw spec["type"] (a chart in charts.js) with the rest of spec as its data. Streamlit sizes the iframe to
+    the chart's height, which changes with screen width (narrow screens stack labels above the bars)."""
     libs = f'<script src="{D3}"></script>'
     if spec["type"] == "sankey":
         libs += f'<script src="{D3_SANKEY}"></script>'
@@ -66,4 +67,4 @@ def render(spec: dict, height: int) -> None:
         f"<style>{CSS}</style>{libs}</head><body class='{_THEME['name']}'><div id='root'></div>"
         f"<script>window.SPEC = {data};</script><script>{_js()}</script></body></html>"
     )
-    st.iframe(html, height=height)
+    st.iframe(html, height="content")

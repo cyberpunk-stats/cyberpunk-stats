@@ -81,7 +81,8 @@ def song_kicker(anchor: str, n: int, extra_class: str = "") -> str:
     return f"<div class='kicker {extra_class}'>{n:02d} // {html.escape(SONGS[anchor][0])}</div>"
 
 
-st.set_page_config(page_title="What was your first Cyberpunk 2077 ending?", page_icon="◢", layout="wide")
+st.set_page_config(page_title="What was your first Cyberpunk 2077 ending?", page_icon="◢", layout="wide",
+                   initial_sidebar_state="collapsed")
 
 # Interface colors (not data colors) live here: yellow / black / cyan, and red for Phantom Liberty.
 st.markdown("""
@@ -268,7 +269,7 @@ with flag_col:
         "played.</p>"
         f"<p class='lede'>{fmt(RM['flagged_any'])} of {fmt(RM['completed_any'])} finishers are flagged "
         f"({pct(100 * RM['flagged_any'] / RM['completed_any'])}). They're counted by default. The Exclude flagged "
-        "records switch in the sidebar takes them out, and sections marked CLEAN DATA change when it's on. The main "
+        "records switch in the sidebar (open it with the » button at the top left) takes them out, and sections marked CLEAN DATA change when it's on. The main "
         f"game shares move by {_clean_shift:.2f} points at most; the completionist numbers move the most.</p>",
         unsafe_allow_html=True)
 
@@ -294,7 +295,7 @@ funnel = [
 render({"type": "hbars", "labelWidth": 200, "color": "#00b8c4",
         "rows": [{"label": l, "value": v, "display": fmt(v), "note": note,
                   "tip": [["Profiles", fmt(v)], ["Of profiles found", pct(100 * v / RM["candidates_discovered"])]]}
-                 for l, v, note in funnel]}, height=len(funnel) * 32 + 12)
+                 for l, v, note in funnel]})
 how("Each bar is one step of collecting the data, and its length is the number of profiles still in at that step. "
     "Profiles drop out when they're private, when the player never finished an ending, or when two endings unlocked "
     "in the same second. That last one happens when a game played offline syncs its achievements all at once, so "
@@ -306,7 +307,7 @@ callout("Every profile here belongs to someone who reviewed the game, and review
 header("main-first", 1, "Main game: first ending",
        f"The first ending of {fmt(MAIN_T['strict_sample_n'])} players. Hover over a block to see how many players "
        "it stands for.", True)
-render({"type": "segmented", "parts": dist_parts("main", MAIN)}, height=118)
+render({"type": "segmented", "parts": dist_parts("main", MAIN)})
 how("The bar is every player put together, and each colored block is one ending. The wider the block, the more "
     "players saw that ending first. The top three are close, so check the percentages printed on the blocks. "
     "On a small screen some blocks get too narrow for a label, and the list underneath has every share.")
@@ -359,7 +360,7 @@ rows += [
      "note": "Counts every The World only first ending as The Devil. The Devil can't be bigger than this."},
 ]
 st.markdown("### How big could The Devil be?")
-render({"type": "dumbbell", "rows": rows, "max": 35, "labelWidth": 200}, height=len(rows) * 34 + 40)
+render({"type": "dumbbell", "rows": rows, "max": 35, "labelWidth": 200})
 how("Each row is one way of counting The Devil, from the strictest at the top to the most generous at the bottom. "
     "A dot is a single number and the thick bar is a range. The top row counts only The Devil achievement. Each row "
     "below adds a group of The World only players who most likely got The Devil too. Hover over a row to see which "
@@ -386,7 +387,7 @@ ub_labels = {"no_named_ending": "Never got an ending achievement",
 render({"type": "hbars", "labelWidth": 400, "color": COLOR[UNMARKED], "max": 100,
         "rows": [{"label": ub_labels[k], "value": b["pct"], "display": pct(b["pct"]),
                   "tip": [["Players", fmt(b["count"])], ["Share", pct(b["pct"], 2)], ["Flagged", fmt(b["flagged"])]]}
-                 for k, b in ub["buckets"].items()]}, height=5 * 32 + 12)
+                 for k, b in ub["buckets"].items()]})
 late_devil = sum(ub["buckets"][k]["pct"] for k in ("devil_lt_4h", "devil_4h_to_24h", "devil_ge_24h"))
 how(f"Each bar is the share of The World only players who did that next. Most either stopped there or went on to "
     f"a different ending. About {pct(late_devil, 0)} came back for The Devil, and nearly all of them did it at "
@@ -397,7 +398,7 @@ st.caption(f"All records, {fmt(ub['n'])} players.")
 header("first-vs-ever", 3, "First ending vs ever unlocked",
        "How many players unlocked each ending at some point, next to how many saw it first.", True)
 render({"type": "dumbbell", "rows": dumbbell_rows(MAIN_T["first_vs_unlock_gap"], MAIN), "max": 100,
-        "labelWidth": 130, "legend": FIRST_VS_EVER_LEGEND}, height=5 * 34 + 80)
+        "labelWidth": 130, "legend": FIRST_VS_EVER_LEGEND})
 how("Each line is one ending. The hollow circle on the left is the share of players who saw that ending first, and "
     "the filled dot on the right is the share who unlocked it at any point, through replays or by reloading a save. "
     "A longer line means more players came back for that ending later. The number after the × says how many times "
@@ -418,7 +419,7 @@ render({"type": "heatmap", "rows": [lab for _, lab in rows_k], "cols": [c for _,
         "cells": [[{"v": ra[k][c]["pct"], "colLabel": cl, "small": ra[k]["n"] < MIN_CELL_N,
                     "tip": [["Players", fmt(ra[k][c]["count"])], ["Of this first ending", pct(ra[k][c]["pct"], 2)],
                             ["Players with this first ending", fmt(ra[k]["n"])]]}
-                   for c, cl in cols] for k, _ in rows_k]}, height=len(rows_k) * 40 + 56)
+                   for c, cl in cols] for k, _ in rows_k]})
 how("Each row is a first ending and each column is a questline. The number in a square is the share of those "
     "players who had finished it, and brighter squares mean bigger shares. Read along a row to see what was open "
     "to that group. A row can add up to more than 100%, because plenty of players had done both questlines.")
@@ -431,12 +432,12 @@ callout(f"{pct(ra[UNMARKED]['neither']['pct'])} of The World only players had do
 with st.container(key="pl_sections"), theme("pl"):
     header("pl-first", 5, "Phantom Liberty: first ending",
            f"The first Phantom Liberty ending of {fmt(PL_T['strict_sample_n'])} players.", True)
-    render({"type": "segmented", "parts": dist_parts("pl", KINGS)}, height=118)
+    render({"type": "segmented", "parts": dist_parts("pl", KINGS)})
     how("The same kind of bar as the main game: every player together, one block per ending. King of Wands takes "
         "up more than half of it.")
     st.markdown("### First vs ever unlocked")
     render({"type": "dumbbell", "rows": dumbbell_rows(PL_T["first_vs_unlock_gap"], KINGS), "max": 100,
-            "labelWidth": 150, "legend": FIRST_VS_EVER_LEGEND}, height=4 * 34 + 80)
+            "labelWidth": 150, "legend": FIRST_VS_EVER_LEGEND})
     how("Read it like the main game version: the hollow circle is the share who saw that ending first, the filled dot "
         "the share who unlocked it at any point. King of Wands has the shortest line, so fewer players went back "
         "for it after seeing another ending first.")
@@ -460,8 +461,7 @@ with st.container(key="pl_sections"), theme("pl"):
              "empty": f"Fewer than {MIN_CELL_N} players" if src[g_]["n"] < MIN_CELL_N else None}
             for g_, gl in GROUPS]
     render({"type": "stacked", "labelWidth": 230, "rows": rows,
-            "keys": [{"key": k, "label": lab, "color": c, "ink": ink} for k, lab, _, c, ink in keys]},
-           height=len(rows) * 40 + 50)
+            "keys": [{"key": k, "label": lab, "color": c, "ink": ink} for k, lab, _, c, ink in keys]})
     how("Each bar is one group of players, split by their first main ending. Compare the same color across the "
         "three bars. The buttons change who is counted. Without The Tower leaves it out, because The Tower can only "
         "be reached through Phantom Liberty. Same game version keeps only endings reached after the expansion came "
@@ -489,7 +489,7 @@ with st.container(key="pl_sections"), theme("pl"):
             "cells": [[{"v": src[k]["pct"].get(c[0]), "colLabel": c[1], "small": src[k]["n"] < MIN_CELL_N,
                         "tip": [["Share of row", pct(src[k]["pct"].get(c[0]), 2)],
                                 ["Players in row", fmt(src[k]["n"])]]}
-                       for c in cols] for k, _ in rows_k]}, height=len(rows_k) * 40 + 56)
+                       for c in cols] for k, _ in rows_k]})
     small_rows = any(src[k]["n"] < MIN_CELL_N for k, _ in rows_k)
     how("Each row is one group of players and each column is where they ended up. Every row adds up to 100%. If "
         "all the rows look about the same, the first ending in one part of the game says little about the other."
@@ -533,7 +533,7 @@ for n in nodes:
         n["tip"] = [["Players arriving here", fmt(totals.get(n["id"][2:], 0))]]
 nodes = [n for n in nodes if not n["id"].startswith("s:") or totals.get(n["id"][2:], 0) > 0]
 render({"type": "sankey", "nodes": nodes, "links": links, "height": 440,
-        "headers": ["FIRST ENDING", "NEXT ENDING"]}, height=450)
+        "headers": ["FIRST ENDING", "NEXT ENDING"]})
 how("First endings are on the left, and the next ending each player unlocked is on the right. The width of each "
     "stream is the number of players who took that path; hover over one to see how many. The gray block at the "
     "bottom right is everyone who never unlocked a second ending.")
@@ -549,8 +549,7 @@ for k, lab, *_ in order:
 render({"type": "stacked", "labelWidth": 150, "rows": rows,
         "keys": [{"key": "save_reload_sweep", "label": "Reload sweep (under 4 hours)", "color": SWEEP, "ink": "#0b0b0b"},
                  {"key": "separate_playthrough", "label": "New playthrough", "color": SEPARATE},
-                 {"key": "no_second_ending", "label": "No second ending", "color": NONE}]},
-       height=len(rows) * 40 + 50)
+                 {"key": "no_second_ending", "label": "No second ending", "color": NONE}]})
 how("Each bar splits the players with one first ending three ways: those who reloaded a save for a second ending "
     "within 4 hours, those who came back later in a new playthrough, and those who stopped at one ending.")
 
@@ -577,8 +576,7 @@ render({"type": "ranges", "unit": "h", "labelWidth": 300,
                   "tip": [["Players", fmt(rg[k]["n"])], ["Median", f"{rg[k]['median_h']}h"],
                           ["Middle half", f"{rg[k]['p25_h']} to {rg[k]['p75_h']}h"], ["Average", f"{rg[k]['mean_h']}h"]]}
                  for k, lab, c in RG if rg[k]["n"]],
-        "legend": [{"label": "Middle half of the group; white line = median", "color": GRAY}]},
-       height=len(RG) * 38 + 76)
+        "legend": [{"label": "Middle half of the group; white line = median", "color": GRAY}]})
 how("Each bar covers the hours played by the middle half of a group: a quarter of the group played less than its "
     "left edge, and a quarter played more than its right edge. The white line is the median, where half played "
     "less and half played more. The rushers' bar sits well to the left of everyone else's.")
@@ -595,7 +593,7 @@ with st.container(key="pl_rushers"), theme("pl"):
                       "display": f"{pct(rk['finish_rate'][k]['finished_pl_pct'])} finished Phantom Liberty",
                       "tip": [["Main game finishers", fmt(rk["finish_rate"][k]["n"])],
                               ["Finished Phantom Liberty", fmt(rk["finish_rate"][k]["finished_pl"])]]}
-                     for k, lab, c in RKG]}, height=3 * 32 + 12)
+                     for k, lab, c in RKG]})
     how("The share of each group that also finished Phantom Liberty.")
     rk_view = toggle("Rusher order", ["Any order", "Phantom Liberty first", "Phantom Liberty later"], "rk_view")
     src = rk["all"] if rk_view == "Any order" else \
@@ -603,8 +601,7 @@ with st.container(key="pl_rushers"), theme("pl"):
     rows = [{"label": lab, "sub": f"{fmt(src[k]['n'])} players", "n": src[k]["n"], "parts": src[k]["pct"],
              "empty": f"Fewer than {MIN_CELL_N} players" if src[k]["n"] < MIN_CELL_N else None} for k, lab, _ in RKG]
     render({"type": "stacked", "labelWidth": 280, "rows": rows,
-            "keys": [{"key": k, "label": lab, "color": c, "ink": ink} for k, lab, _, c, ink in KINGS]},
-           height=len(rows) * 40 + 50)
+            "keys": [{"key": k, "label": lab, "color": c, "ink": ink} for k, lab, _, c, ink in KINGS]})
     how("For the players in each group who did finish Phantom Liberty, the bar shows which Phantom Liberty ending they got "
         "first.")
 
@@ -622,7 +619,7 @@ for col, (tk, title, color) in zip((c1, c2), (("main", "Main game endings unlock
                 "bars": [{"x": x, "value": v["pct"], "display": pct(v["pct"], 0),
                           "title": f"{x} ending{'s' if x != '1' else ''}",
                           "tip": [["Players", fmt(v["count"])], ["Of finishers", pct(v["pct"], 2)]]}
-                         for x, v in eu["counts"].items() if x != "0"]}, height=250)
+                         for x, v in eu["counts"].items() if x != "0"]})
 how("Each column is a number of endings unlocked, and its height is the share of finishers with exactly that many. "
     "The tall columns at both ends show that players tend to stop after one ending or collect the whole set.")
 sets = cp["sets"]
@@ -649,8 +646,7 @@ render({"type": "hbars", "labelWidth": 400, "max": 100, "color": "#00b8c4",
         "rows": [{"label": stage_names.get(s_["stage"], s_["stage"]), "value": s_["pct_of_base"],
                   "display": pct(s_["pct_of_base"]),
                   "tip": [["Reached", fmt(s_["reached"])], ["Of everyone", pct(s_["pct_of_base"], 2)],
-                          ["Of the step before", pct(s_["pct_of_previous"], 2)]]} for s_ in sf["stages"]]},
-       height=len(sf["stages"]) * 32 + 12)
+                          ["Of the step before", pct(s_["pct_of_previous"], 2)]]} for s_ in sf["stages"]]})
 how("Each bar is the share of players who reached that point in the story. The bars get shorter as people drop "
     "off. The last bar is everyone who finished.")
 st.markdown(f"### Where the {fmt(sf['not_finished'])} who didn't finish stopped")
@@ -660,7 +656,7 @@ render({"type": "hbars", "labelWidth": 400, "max": 100, "color": GRAY,
                   "color": "#00b8c4" if lab == sf["most_common_stop"] else GRAY,
                   "tip": [["Players", fmt(v["count"])], ["Of those who didn't finish", pct(v["pct_of_non_finishers"], 2)],
                           ["Median playtime", f"{v['median_playtime_h']}h" if v["median_playtime_h"] else "—"]]}
-                 for lab, v in sf["stopped_after"].items()]}, height=len(sf["stopped_after"]) * 32 + 12)
+                 for lab, v in sf["stopped_after"].items()]})
 how("This one only counts players who never finished. Each bar is the last story point they reached, and the "
     "highlighted bar is the most common place to stop. Hover to see how many hours those players had put in.")
 
@@ -674,8 +670,7 @@ render({"type": "dumbbell", "labelWidth": 110,
                   "valueLabel": "", "tip": [["Public", pct(v["public_pct"], 2)], ["Private", pct(v["private_pct"], 2)]]}
                  for band, v in sb["playtime_bands"].items()],
         "legend": [{"label": "Public profiles", "color": "#00b8c4", "hollow": True},
-                   {"label": "Private profiles", "color": "#00b8c4"}]},
-       height=len(sb["playtime_bands"]) * 34 + 80)
+                   {"label": "Private profiles", "color": "#00b8c4"}]})
 how("Each row is a range of hours played. The hollow circle is the share of public profiles in that range and the "
     "filled dot is the share of private ones. Short lines mean the two groups look alike.")
 shift = max(abs(sb["first_ending_reweighted_to_private"][k] - sb["first_ending_public"][k])
