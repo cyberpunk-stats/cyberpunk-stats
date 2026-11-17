@@ -2,7 +2,7 @@
 
 This is a data project made entirely out of curiosity and for fun, because I'm a little obsessive about Cyberpunk 2077. I read Steam achievement unlock times from public profiles of people who reviewed Cyberpunk 2077, and treat the earliest ending achievement as the first ending to figure out which endings people tend to pick on their first playthrough.
 
-Live dashboard: <!-- add the Streamlit Cloud link here -->
+Live dashboard: https://cyberpunk-stats.streamlit.app/
 
 This project is not affiliated with CD PROJEKT RED.
 
