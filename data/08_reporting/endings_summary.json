@@ -1,0 +1,2433 @@
+{
+  "appid": 1091500,
+  "generated_at": 1794873221,
+  "achievement_mapping": {
+    "TheStar": "TheStar",
+    "TheSun": "TheSun",
+    "Temperance": "Temperance",
+    "TheDevil": "TheDevil",
+    "TheTower": "TheTower",
+    "KingOfTheWands": "KingOfTheWands",
+    "KingOfTheCups": "KingOfTheCups",
+    "KingOfTheSwords": "KingOfTheSwords",
+    "KingOfThePentacles": "KingOfThePentacles",
+    "TheWorld": "TheWorld"
+  },
+  "run_metrics": {
+    "reviews_seen": 290159,
+    "review_pages": 2902,
+    "filtered_low_playtime": 0,
+    "duplicate_reviewers": 0,
+    "candidates_discovered": 290159,
+    "ids_queried": 290109,
+    "pending": 50,
+    "private_profiles": 137555,
+    "private_pct_of_queried": 47.41,
+    "no_stats": 0,
+    "errors": 0,
+    "public_profiles": 152554,
+    "never_finished_either": 32554,
+    "completed_any": 120000,
+    "no_world_late_story": 15518,
+    "base_ending_no_world": 244,
+    "flag_burst": 6895,
+    "flag_low_playtime": 391,
+    "flagged_any": 7102
+  },
+  "flag_config": {
+    "burst_count": 8,
+    "burst_window_s": 60,
+    "low_playtime_mins": 900
+  },
+  "tracks": {
+    "main": {
+      "title": "Main game",
+      "completed_runs": 116211,
+      "offline_sync_ties": 7858,
+      "strict_sample_n": 108353,
+      "first_ending_distribution": {
+        "TheSun": {
+          "count": 29673,
+          "pct": 27.39
+        },
+        "TheWorld only (no ending achievement)": {
+          "count": 26059,
+          "pct": 24.05
+        },
+        "TheStar": {
+          "count": 23626,
+          "pct": 21.8
+        },
+        "Temperance": {
+          "count": 14289,
+          "pct": 13.19
+        },
+        "TheTower": {
+          "count": 7780,
+          "pct": 7.18
+        },
+        "TheDevil": {
+          "count": 6926,
+          "pct": 6.39
+        }
+      },
+      "unlock_rates": {
+        "TheStar": {
+          "count": 57095,
+          "pct": 52.69
+        },
+        "TheSun": {
+          "count": 64602,
+          "pct": 59.62
+        },
+        "Temperance": {
+          "count": 51203,
+          "pct": 47.26
+        },
+        "TheDevil": {
+          "count": 31292,
+          "pct": 28.88
+        },
+        "TheTower": {
+          "count": 37870,
+          "pct": 34.95
+        },
+        "TheWorld": {
+          "count": 106742,
+          "pct": 98.51
+        }
+      },
+      "first_vs_unlock_gap": {
+        "TheStar": {
+          "first_ending_pct": 21.8,
+          "unlock_pct": 52.69,
+          "inflation_pp": 30.89,
+          "inflation_ratio": 2.42
+        },
+        "TheSun": {
+          "first_ending_pct": 27.39,
+          "unlock_pct": 59.62,
+          "inflation_pp": 32.23,
+          "inflation_ratio": 2.18
+        },
+        "Temperance": {
+          "first_ending_pct": 13.19,
+          "unlock_pct": 47.26,
+          "inflation_pp": 34.07,
+          "inflation_ratio": 3.58
+        },
+        "TheDevil": {
+          "first_ending_pct": 6.39,
+          "unlock_pct": 28.88,
+          "inflation_pp": 22.49,
+          "inflation_ratio": 4.52
+        },
+        "TheTower": {
+          "first_ending_pct": 7.18,
+          "unlock_pct": 34.95,
+          "inflation_pp": 27.77,
+          "inflation_ratio": 4.87
+        }
+      },
+      "transitions": {
+        "Temperance": {
+          "n": 14289,
+          "transition_types": {
+            "no_second_ending": {
+              "count": 5371,
+              "pct": 37.59
+            },
+            "separate_playthrough": {
+              "count": 6248,
+              "pct": 43.73
+            },
+            "save_reload_sweep": {
+              "count": 2670,
+              "pct": 18.69
+            }
+          },
+          "second_ending": {
+            "TheTower": 1156,
+            "TheSun": 4279,
+            "TheStar": 2587,
+            "TheDevil": 896
+          },
+          "unlocked_within_4h_of_first": {
+            "TheStar": {
+              "count": 987,
+              "pct": 6.91
+            },
+            "TheSun": {
+              "count": 1639,
+              "pct": 11.47
+            },
+            "TheDevil": {
+              "count": 330,
+              "pct": 2.31
+            },
+            "TheTower": {
+              "count": 120,
+              "pct": 0.84
+            }
+          }
+        },
+        "TheDevil": {
+          "n": 6926,
+          "transition_types": {
+            "separate_playthrough": {
+              "count": 4161,
+              "pct": 60.08
+            },
+            "no_second_ending": {
+              "count": 2072,
+              "pct": 29.92
+            },
+            "save_reload_sweep": {
+              "count": 693,
+              "pct": 10.01
+            }
+          },
+          "second_ending": {
+            "Temperance": 1290,
+            "TheStar": 1244,
+            "TheSun": 1672,
+            "TheTower": 648
+          },
+          "unlocked_within_4h_of_first": {
+            "TheStar": {
+              "count": 261,
+              "pct": 3.77
+            },
+            "TheSun": {
+              "count": 333,
+              "pct": 4.81
+            },
+            "Temperance": {
+              "count": 342,
+              "pct": 4.94
+            },
+            "TheTower": {
+              "count": 49,
+              "pct": 0.71
+            }
+          }
+        },
+        "TheStar": {
+          "n": 23626,
+          "transition_types": {
+            "separate_playthrough": {
+              "count": 10912,
+              "pct": 46.19
+            },
+            "no_second_ending": {
+              "count": 11053,
+              "pct": 46.78
+            },
+            "save_reload_sweep": {
+              "count": 1661,
+              "pct": 7.03
+            }
+          },
+          "second_ending": {
+            "Temperance": 4184,
+            "TheSun": 4785,
+            "TheTower": 2341,
+            "TheDevil": 1263
+          },
+          "unlocked_within_4h_of_first": {
+            "TheSun": {
+              "count": 504,
+              "pct": 2.13
+            },
+            "Temperance": {
+              "count": 1168,
+              "pct": 4.94
+            },
+            "TheDevil": {
+              "count": 284,
+              "pct": 1.2
+            },
+            "TheTower": {
+              "count": 127,
+              "pct": 0.54
+            }
+          }
+        },
+        "TheSun": {
+          "n": 29673,
+          "transition_types": {
+            "no_second_ending": {
+              "count": 13376,
+              "pct": 45.08
+            },
+            "save_reload_sweep": {
+              "count": 2957,
+              "pct": 9.97
+            },
+            "separate_playthrough": {
+              "count": 13340,
+              "pct": 44.96
+            }
+          },
+          "second_ending": {
+            "TheDevil": 1951,
+            "TheTower": 2982,
+            "Temperance": 6678,
+            "TheStar": 4686
+          },
+          "unlocked_within_4h_of_first": {
+            "TheStar": {
+              "count": 786,
+              "pct": 2.65
+            },
+            "Temperance": {
+              "count": 2004,
+              "pct": 6.75
+            },
+            "TheDevil": {
+              "count": 439,
+              "pct": 1.48
+            },
+            "TheTower": {
+              "count": 249,
+              "pct": 0.84
+            }
+          }
+        },
+        "TheTower": {
+          "n": 7780,
+          "transition_types": {
+            "no_second_ending": {
+              "count": 1542,
+              "pct": 19.82
+            },
+            "separate_playthrough": {
+              "count": 5555,
+              "pct": 71.4
+            },
+            "save_reload_sweep": {
+              "count": 683,
+              "pct": 8.78
+            }
+          },
+          "second_ending": {
+            "TheStar": 1410,
+            "TheSun": 2110,
+            "TheDevil": 1285,
+            "Temperance": 1433
+          },
+          "unlocked_within_4h_of_first": {
+            "TheStar": {
+              "count": 172,
+              "pct": 2.21
+            },
+            "TheSun": {
+              "count": 309,
+              "pct": 3.97
+            },
+            "Temperance": {
+              "count": 273,
+              "pct": 3.51
+            },
+            "TheDevil": {
+              "count": 193,
+              "pct": 2.48
+            }
+          }
+        },
+        "TheWorld only (no ending achievement)": {
+          "n": 26059,
+          "transition_types": {
+            "no_second_ending": {
+              "count": 11036,
+              "pct": 42.35
+            },
+            "separate_playthrough": {
+              "count": 14095,
+              "pct": 54.09
+            },
+            "save_reload_sweep": {
+              "count": 928,
+              "pct": 3.56
+            }
+          },
+          "second_ending": {
+            "TheTower": 2514,
+            "Temperance": 3316,
+            "TheStar": 3857,
+            "TheDevil": 403,
+            "TheSun": 4933
+          },
+          "unlocked_within_4h_of_first": {
+            "TheStar": {
+              "count": 332,
+              "pct": 1.27
+            },
+            "TheSun": {
+              "count": 416,
+              "pct": 1.6
+            },
+            "Temperance": {
+              "count": 272,
+              "pct": 1.04
+            },
+            "TheDevil": {
+              "count": 40,
+              "pct": 0.15
+            },
+            "TheTower": {
+              "count": 55,
+              "pct": 0.21
+            }
+          }
+        }
+      },
+      "devil_total": {
+        "achievement_count": 6926,
+        "achievement_pct": 6.39,
+        "no_achievement_count": 26059,
+        "no_achievement_pct": 24.05,
+        "total_count": 32985,
+        "total_pct": 30.44,
+        "glitch_estimate": {
+          "co_sync_first_endings": 67588,
+          "world_missing_star_sun": {
+            "count": 68,
+            "n": 53299,
+            "pct": 0.13
+          },
+          "world_missing_star_sun_temperance": {
+            "count": 464,
+            "n": 67588,
+            "pct": 0.69
+          },
+          "star_without_panam": {
+            "never": 205,
+            "later": 187,
+            "n": 23626,
+            "pct": 1.66
+          },
+          "failure_rate_low_pct": 0.13,
+          "failure_rate_high_pct": 1.66,
+          "expected_glitched_low": 86,
+          "expected_glitched_high": 1121
+        },
+        "adjusted_low_count": 31864,
+        "adjusted_low_pct": 29.41,
+        "adjusted_high_count": 32899,
+        "adjusted_high_pct": 30.36,
+        "floors": {
+          "rushers_count": 14909,
+          "rushers_pct": 13.76,
+          "neither_questline_count": 24211,
+          "neither_questline_pct": 22.34
+        }
+      }
+    },
+    "pl": {
+      "title": "Phantom Liberty",
+      "completed_runs": 82098,
+      "offline_sync_ties": 11312,
+      "strict_sample_n": 70786,
+      "first_ending_distribution": {
+        "KingOfTheWands": {
+          "count": 37415,
+          "pct": 52.86
+        },
+        "KingOfTheSwords": {
+          "count": 13127,
+          "pct": 18.54
+        },
+        "KingOfThePentacles": {
+          "count": 11505,
+          "pct": 16.25
+        },
+        "KingOfTheCups": {
+          "count": 8739,
+          "pct": 12.35
+        }
+      },
+      "unlock_rates": {
+        "KingOfTheWands": {
+          "count": 50432,
+          "pct": 71.25
+        },
+        "KingOfTheCups": {
+          "count": 27631,
+          "pct": 39.03
+        },
+        "KingOfTheSwords": {
+          "count": 30559,
+          "pct": 43.17
+        },
+        "KingOfThePentacles": {
+          "count": 30630,
+          "pct": 43.27
+        }
+      },
+      "first_vs_unlock_gap": {
+        "KingOfTheWands": {
+          "first_ending_pct": 52.86,
+          "unlock_pct": 71.25,
+          "inflation_pp": 18.39,
+          "inflation_ratio": 1.35
+        },
+        "KingOfTheCups": {
+          "first_ending_pct": 12.35,
+          "unlock_pct": 39.03,
+          "inflation_pp": 26.68,
+          "inflation_ratio": 3.16
+        },
+        "KingOfTheSwords": {
+          "first_ending_pct": 18.54,
+          "unlock_pct": 43.17,
+          "inflation_pp": 24.63,
+          "inflation_ratio": 2.33
+        },
+        "KingOfThePentacles": {
+          "first_ending_pct": 16.25,
+          "unlock_pct": 43.27,
+          "inflation_pp": 27.02,
+          "inflation_ratio": 2.66
+        }
+      },
+      "transitions": {
+        "KingOfTheCups": {
+          "n": 8739,
+          "transition_types": {
+            "no_second_ending": {
+              "count": 4431,
+              "pct": 50.7
+            },
+            "save_reload_sweep": {
+              "count": 1781,
+              "pct": 20.38
+            },
+            "separate_playthrough": {
+              "count": 2527,
+              "pct": 28.92
+            }
+          },
+          "second_ending": {
+            "KingOfThePentacles": 2729,
+            "KingOfTheWands": 1244,
+            "KingOfTheSwords": 335
+          },
+          "unlocked_within_4h_of_first": {
+            "KingOfTheWands": {
+              "count": 218,
+              "pct": 2.49
+            },
+            "KingOfTheSwords": {
+              "count": 189,
+              "pct": 2.16
+            },
+            "KingOfThePentacles": {
+              "count": 1719,
+              "pct": 19.67
+            }
+          }
+        },
+        "KingOfThePentacles": {
+          "n": 11505,
+          "transition_types": {
+            "separate_playthrough": {
+              "count": 3911,
+              "pct": 33.99
+            },
+            "no_second_ending": {
+              "count": 6580,
+              "pct": 57.19
+            },
+            "save_reload_sweep": {
+              "count": 1014,
+              "pct": 8.81
+            }
+          },
+          "second_ending": {
+            "KingOfTheWands": 2260,
+            "KingOfTheCups": 2206,
+            "KingOfTheSwords": 459
+          },
+          "unlocked_within_4h_of_first": {
+            "KingOfTheWands": {
+              "count": 143,
+              "pct": 1.24
+            },
+            "KingOfTheCups": {
+              "count": 970,
+              "pct": 8.43
+            },
+            "KingOfTheSwords": {
+              "count": 127,
+              "pct": 1.1
+            }
+          }
+        },
+        "KingOfTheSwords": {
+          "n": 13127,
+          "transition_types": {
+            "separate_playthrough": {
+              "count": 4189,
+              "pct": 31.91
+            },
+            "no_second_ending": {
+              "count": 6458,
+              "pct": 49.2
+            },
+            "save_reload_sweep": {
+              "count": 2480,
+              "pct": 18.89
+            }
+          },
+          "second_ending": {
+            "KingOfTheWands": 4406,
+            "KingOfThePentacles": 1146,
+            "KingOfTheCups": 1117
+          },
+          "unlocked_within_4h_of_first": {
+            "KingOfTheWands": {
+              "count": 2455,
+              "pct": 18.7
+            },
+            "KingOfTheCups": {
+              "count": 109,
+              "pct": 0.83
+            },
+            "KingOfThePentacles": {
+              "count": 114,
+              "pct": 0.87
+            }
+          }
+        },
+        "KingOfTheWands": {
+          "n": 37415,
+          "transition_types": {
+            "separate_playthrough": {
+              "count": 9867,
+              "pct": 26.37
+            },
+            "no_second_ending": {
+              "count": 21539,
+              "pct": 57.57
+            },
+            "save_reload_sweep": {
+              "count": 6009,
+              "pct": 16.06
+            }
+          },
+          "second_ending": {
+            "KingOfTheSwords": 9105,
+            "KingOfThePentacles": 3109,
+            "KingOfTheCups": 3662
+          },
+          "unlocked_within_4h_of_first": {
+            "KingOfTheCups": {
+              "count": 422,
+              "pct": 1.13
+            },
+            "KingOfTheSwords": {
+              "count": 5843,
+              "pct": 15.62
+            },
+            "KingOfThePentacles": {
+              "count": 385,
+              "pct": 1.03
+            }
+          }
+        }
+      }
+    }
+  },
+  "tracks_clean": {
+    "main": {
+      "title": "Main game",
+      "completed_runs": 109136,
+      "offline_sync_ties": 2976,
+      "strict_sample_n": 106160,
+      "first_ending_distribution": {
+        "TheSun": {
+          "count": 29202,
+          "pct": 27.51
+        },
+        "TheWorld only (no ending achievement)": {
+          "count": 25506,
+          "pct": 24.03
+        },
+        "TheStar": {
+          "count": 23181,
+          "pct": 21.84
+        },
+        "Temperance": {
+          "count": 13888,
+          "pct": 13.08
+        },
+        "TheTower": {
+          "count": 7678,
+          "pct": 7.23
+        },
+        "TheDevil": {
+          "count": 6705,
+          "pct": 6.32
+        }
+      },
+      "unlock_rates": {
+        "TheStar": {
+          "count": 55709,
+          "pct": 52.48
+        },
+        "TheSun": {
+          "count": 63126,
+          "pct": 59.46
+        },
+        "Temperance": {
+          "count": 49589,
+          "pct": 46.71
+        },
+        "TheDevil": {
+          "count": 29999,
+          "pct": 28.26
+        },
+        "TheTower": {
+          "count": 36691,
+          "pct": 34.56
+        },
+        "TheWorld": {
+          "count": 104631,
+          "pct": 98.56
+        }
+      },
+      "first_vs_unlock_gap": {
+        "TheStar": {
+          "first_ending_pct": 21.84,
+          "unlock_pct": 52.48,
+          "inflation_pp": 30.64,
+          "inflation_ratio": 2.4
+        },
+        "TheSun": {
+          "first_ending_pct": 27.51,
+          "unlock_pct": 59.46,
+          "inflation_pp": 31.95,
+          "inflation_ratio": 2.16
+        },
+        "Temperance": {
+          "first_ending_pct": 13.08,
+          "unlock_pct": 46.71,
+          "inflation_pp": 33.63,
+          "inflation_ratio": 3.57
+        },
+        "TheDevil": {
+          "first_ending_pct": 6.32,
+          "unlock_pct": 28.26,
+          "inflation_pp": 21.94,
+          "inflation_ratio": 4.47
+        },
+        "TheTower": {
+          "first_ending_pct": 7.23,
+          "unlock_pct": 34.56,
+          "inflation_pp": 27.33,
+          "inflation_ratio": 4.78
+        }
+      },
+      "transitions": {
+        "Temperance": {
+          "n": 13888,
+          "transition_types": {
+            "no_second_ending": {
+              "count": 5268,
+              "pct": 37.93
+            },
+            "separate_playthrough": {
+              "count": 6021,
+              "pct": 43.35
+            },
+            "save_reload_sweep": {
+              "count": 2599,
+              "pct": 18.71
+            }
+          },
+          "second_ending": {
+            "TheTower": 1120,
+            "TheSun": 4143,
+            "TheStar": 2507,
+            "TheDevil": 850
+          },
+          "unlocked_within_4h_of_first": {
+            "TheStar": {
+              "count": 952,
+              "pct": 6.85
+            },
+            "TheSun": {
+              "count": 1589,
+              "pct": 11.44
+            },
+            "TheDevil": {
+              "count": 313,
+              "pct": 2.25
+            },
+            "TheTower": {
+              "count": 109,
+              "pct": 0.78
+            }
+          }
+        },
+        "TheDevil": {
+          "n": 6705,
+          "transition_types": {
+            "separate_playthrough": {
+              "count": 4020,
+              "pct": 59.96
+            },
+            "no_second_ending": {
+              "count": 2023,
+              "pct": 30.17
+            },
+            "save_reload_sweep": {
+              "count": 662,
+              "pct": 9.87
+            }
+          },
+          "second_ending": {
+            "Temperance": 1240,
+            "TheStar": 1201,
+            "TheSun": 1616,
+            "TheTower": 625
+          },
+          "unlocked_within_4h_of_first": {
+            "TheStar": {
+              "count": 249,
+              "pct": 3.71
+            },
+            "TheSun": {
+              "count": 320,
+              "pct": 4.77
+            },
+            "Temperance": {
+              "count": 328,
+              "pct": 4.89
+            },
+            "TheTower": {
+              "count": 48,
+              "pct": 0.72
+            }
+          }
+        },
+        "TheStar": {
+          "n": 23181,
+          "transition_types": {
+            "separate_playthrough": {
+              "count": 10571,
+              "pct": 45.6
+            },
+            "no_second_ending": {
+              "count": 10995,
+              "pct": 47.43
+            },
+            "save_reload_sweep": {
+              "count": 1615,
+              "pct": 6.97
+            }
+          },
+          "second_ending": {
+            "Temperance": 4020,
+            "TheSun": 4664,
+            "TheTower": 2306,
+            "TheDevil": 1196
+          },
+          "unlocked_within_4h_of_first": {
+            "TheSun": {
+              "count": 479,
+              "pct": 2.07
+            },
+            "Temperance": {
+              "count": 1136,
+              "pct": 4.9
+            },
+            "TheDevil": {
+              "count": 268,
+              "pct": 1.16
+            },
+            "TheTower": {
+              "count": 119,
+              "pct": 0.51
+            }
+          }
+        },
+        "TheSun": {
+          "n": 29202,
+          "transition_types": {
+            "no_second_ending": {
+              "count": 13297,
+              "pct": 45.53
+            },
+            "save_reload_sweep": {
+              "count": 2896,
+              "pct": 9.92
+            },
+            "separate_playthrough": {
+              "count": 13009,
+              "pct": 44.55
+            }
+          },
+          "second_ending": {
+            "TheDevil": 1885,
+            "TheTower": 2943,
+            "Temperance": 6475,
+            "TheStar": 4602
+          },
+          "unlocked_within_4h_of_first": {
+            "TheStar": {
+              "count": 767,
+              "pct": 2.63
+            },
+            "Temperance": {
+              "count": 1956,
+              "pct": 6.7
+            },
+            "TheDevil": {
+              "count": 429,
+              "pct": 1.47
+            },
+            "TheTower": {
+              "count": 245,
+              "pct": 0.84
+            }
+          }
+        },
+        "TheTower": {
+          "n": 7678,
+          "transition_types": {
+            "no_second_ending": {
+              "count": 1521,
+              "pct": 19.81
+            },
+            "separate_playthrough": {
+              "count": 5487,
+              "pct": 71.46
+            },
+            "save_reload_sweep": {
+              "count": 670,
+              "pct": 8.73
+            }
+          },
+          "second_ending": {
+            "TheStar": 1397,
+            "TheSun": 2082,
+            "TheDevil": 1268,
+            "Temperance": 1410
+          },
+          "unlocked_within_4h_of_first": {
+            "TheStar": {
+              "count": 168,
+              "pct": 2.19
+            },
+            "TheSun": {
+              "count": 305,
+              "pct": 3.97
+            },
+            "Temperance": {
+              "count": 268,
+              "pct": 3.49
+            },
+            "TheDevil": {
+              "count": 188,
+              "pct": 2.45
+            }
+          }
+        },
+        "TheWorld only (no ending achievement)": {
+          "n": 25506,
+          "transition_types": {
+            "no_second_ending": {
+              "count": 10914,
+              "pct": 42.79
+            },
+            "separate_playthrough": {
+              "count": 13689,
+              "pct": 53.67
+            },
+            "save_reload_sweep": {
+              "count": 903,
+              "pct": 3.54
+            }
+          },
+          "second_ending": {
+            "TheTower": 2471,
+            "Temperance": 3185,
+            "TheStar": 3766,
+            "TheDevil": 356,
+            "TheSun": 4814
+          },
+          "unlocked_within_4h_of_first": {
+            "TheStar": {
+              "count": 320,
+              "pct": 1.25
+            },
+            "TheSun": {
+              "count": 405,
+              "pct": 1.59
+            },
+            "Temperance": {
+              "count": 264,
+              "pct": 1.04
+            },
+            "TheDevil": {
+              "count": 36,
+              "pct": 0.14
+            },
+            "TheTower": {
+              "count": 54,
+              "pct": 0.21
+            }
+          }
+        }
+      },
+      "devil_total": {
+        "achievement_count": 6705,
+        "achievement_pct": 6.32,
+        "no_achievement_count": 25506,
+        "no_achievement_pct": 24.03,
+        "total_count": 32211,
+        "total_pct": 30.34,
+        "glitch_estimate": {
+          "co_sync_first_endings": 66271,
+          "world_missing_star_sun": {
+            "count": 48,
+            "n": 52383,
+            "pct": 0.09
+          },
+          "world_missing_star_sun_temperance": {
+            "count": 318,
+            "n": 66271,
+            "pct": 0.48
+          },
+          "star_without_panam": {
+            "never": 190,
+            "later": 173,
+            "n": 23181,
+            "pct": 1.57
+          },
+          "failure_rate_low_pct": 0.09,
+          "failure_rate_high_pct": 1.57,
+          "expected_glitched_low": 61,
+          "expected_glitched_high": 1038
+        },
+        "adjusted_low_count": 31173,
+        "adjusted_low_pct": 29.36,
+        "adjusted_high_count": 32150,
+        "adjusted_high_pct": 30.28
+      }
+    },
+    "pl": {
+      "title": "Phantom Liberty",
+      "completed_runs": 75907,
+      "offline_sync_ties": 7099,
+      "strict_sample_n": 68808,
+      "first_ending_distribution": {
+        "KingOfTheWands": {
+          "count": 36451,
+          "pct": 52.97
+        },
+        "KingOfTheSwords": {
+          "count": 12675,
+          "pct": 18.42
+        },
+        "KingOfThePentacles": {
+          "count": 11150,
+          "pct": 16.2
+        },
+        "KingOfTheCups": {
+          "count": 8532,
+          "pct": 12.4
+        }
+      },
+      "unlock_rates": {
+        "KingOfTheWands": {
+          "count": 48983,
+          "pct": 71.19
+        },
+        "KingOfTheCups": {
+          "count": 26697,
+          "pct": 38.8
+        },
+        "KingOfTheSwords": {
+          "count": 29473,
+          "pct": 42.83
+        },
+        "KingOfThePentacles": {
+          "count": 29540,
+          "pct": 42.93
+        }
+      },
+      "first_vs_unlock_gap": {
+        "KingOfTheWands": {
+          "first_ending_pct": 52.97,
+          "unlock_pct": 71.19,
+          "inflation_pp": 18.22,
+          "inflation_ratio": 1.34
+        },
+        "KingOfTheCups": {
+          "first_ending_pct": 12.4,
+          "unlock_pct": 38.8,
+          "inflation_pp": 26.4,
+          "inflation_ratio": 3.13
+        },
+        "KingOfTheSwords": {
+          "first_ending_pct": 18.42,
+          "unlock_pct": 42.83,
+          "inflation_pp": 24.41,
+          "inflation_ratio": 2.33
+        },
+        "KingOfThePentacles": {
+          "first_ending_pct": 16.2,
+          "unlock_pct": 42.93,
+          "inflation_pp": 26.73,
+          "inflation_ratio": 2.65
+        }
+      },
+      "transitions": {
+        "KingOfTheCups": {
+          "n": 8532,
+          "transition_types": {
+            "no_second_ending": {
+              "count": 4338,
+              "pct": 50.84
+            },
+            "save_reload_sweep": {
+              "count": 1732,
+              "pct": 20.3
+            },
+            "separate_playthrough": {
+              "count": 2462,
+              "pct": 28.86
+            }
+          },
+          "second_ending": {
+            "KingOfThePentacles": 2671,
+            "KingOfTheWands": 1207,
+            "KingOfTheSwords": 316
+          },
+          "unlocked_within_4h_of_first": {
+            "KingOfTheWands": {
+              "count": 202,
+              "pct": 2.37
+            },
+            "KingOfTheSwords": {
+              "count": 172,
+              "pct": 2.02
+            },
+            "KingOfThePentacles": {
+              "count": 1672,
+              "pct": 19.6
+            }
+          }
+        },
+        "KingOfThePentacles": {
+          "n": 11150,
+          "transition_types": {
+            "separate_playthrough": {
+              "count": 3761,
+              "pct": 33.73
+            },
+            "no_second_ending": {
+              "count": 6404,
+              "pct": 57.43
+            },
+            "save_reload_sweep": {
+              "count": 985,
+              "pct": 8.83
+            }
+          },
+          "second_ending": {
+            "KingOfTheWands": 2167,
+            "KingOfTheCups": 2143,
+            "KingOfTheSwords": 436
+          },
+          "unlocked_within_4h_of_first": {
+            "KingOfTheWands": {
+              "count": 136,
+              "pct": 1.22
+            },
+            "KingOfTheCups": {
+              "count": 944,
+              "pct": 8.47
+            },
+            "KingOfTheSwords": {
+              "count": 119,
+              "pct": 1.07
+            }
+          }
+        },
+        "KingOfTheSwords": {
+          "n": 12675,
+          "transition_types": {
+            "separate_playthrough": {
+              "count": 4011,
+              "pct": 31.64
+            },
+            "no_second_ending": {
+              "count": 6273,
+              "pct": 49.49
+            },
+            "save_reload_sweep": {
+              "count": 2391,
+              "pct": 18.86
+            }
+          },
+          "second_ending": {
+            "KingOfTheWands": 4239,
+            "KingOfThePentacles": 1091,
+            "KingOfTheCups": 1072
+          },
+          "unlocked_within_4h_of_first": {
+            "KingOfTheWands": {
+              "count": 2368,
+              "pct": 18.68
+            },
+            "KingOfTheCups": {
+              "count": 102,
+              "pct": 0.8
+            },
+            "KingOfThePentacles": {
+              "count": 105,
+              "pct": 0.83
+            }
+          }
+        },
+        "KingOfTheWands": {
+          "n": 36451,
+          "transition_types": {
+            "separate_playthrough": {
+              "count": 9526,
+              "pct": 26.13
+            },
+            "no_second_ending": {
+              "count": 21097,
+              "pct": 57.88
+            },
+            "save_reload_sweep": {
+              "count": 5828,
+              "pct": 15.99
+            }
+          },
+          "second_ending": {
+            "KingOfTheSwords": 8840,
+            "KingOfTheCups": 3535,
+            "KingOfThePentacles": 2979
+          },
+          "unlocked_within_4h_of_first": {
+            "KingOfTheCups": {
+              "count": 391,
+              "pct": 1.07
+            },
+            "KingOfTheSwords": {
+              "count": 5675,
+              "pct": 15.57
+            },
+            "KingOfThePentacles": {
+              "count": 359,
+              "pct": 0.98
+            }
+          }
+        }
+      }
+    }
+  },
+  "world_cosync": {
+    "TheStar": {
+      "n": 28782,
+      "within_grace": {
+        "count": 24680,
+        "pct": 85.75
+      },
+      "world_later_lt_2h": {
+        "count": 4,
+        "pct": 0.01
+      },
+      "world_later_ge_2h": {
+        "count": 30,
+        "pct": 0.1
+      },
+      "world_earlier": {
+        "count": 4058,
+        "pct": 14.1
+      },
+      "no_world": {
+        "count": 10,
+        "pct": 0.03
+      }
+    },
+    "TheSun": {
+      "n": 36079,
+      "within_grace": {
+        "count": 30905,
+        "pct": 85.66
+      },
+      "world_later_lt_2h": {
+        "count": 2,
+        "pct": 0.01
+      },
+      "world_later_ge_2h": {
+        "count": 22,
+        "pct": 0.06
+      },
+      "world_earlier": {
+        "count": 5144,
+        "pct": 14.26
+      },
+      "no_world": {
+        "count": 6,
+        "pct": 0.02
+      }
+    },
+    "Temperance": {
+      "n": 18307,
+      "within_grace": {
+        "count": 14444,
+        "pct": 78.9
+      },
+      "world_later_lt_2h": {
+        "count": 8,
+        "pct": 0.04
+      },
+      "world_later_ge_2h": {
+        "count": 296,
+        "pct": 1.62
+      },
+      "world_earlier": {
+        "count": 3452,
+        "pct": 18.86
+      },
+      "no_world": {
+        "count": 107,
+        "pct": 0.58
+      }
+    },
+    "TheDevil": {
+      "n": 7916,
+      "within_grace": {
+        "count": 1775,
+        "pct": 22.42
+      },
+      "world_later_lt_2h": {
+        "count": 4739,
+        "pct": 59.87
+      },
+      "world_later_ge_2h": {
+        "count": 872,
+        "pct": 11.02
+      },
+      "world_earlier": {
+        "count": 438,
+        "pct": 5.53
+      },
+      "no_world": {
+        "count": 92,
+        "pct": 1.16
+      }
+    },
+    "TheTower": {
+      "n": 11192,
+      "within_grace": {
+        "count": 59,
+        "pct": 0.53
+      },
+      "world_later_lt_2h": {
+        "count": 388,
+        "pct": 3.47
+      },
+      "world_later_ge_2h": {
+        "count": 6662,
+        "pct": 59.52
+      },
+      "world_earlier": {
+        "count": 2692,
+        "pct": 24.05
+      },
+      "no_world": {
+        "count": 1391,
+        "pct": 12.43
+      }
+    },
+    "KingOfTheWands": {
+      "n": 20369,
+      "within_grace": {
+        "count": 46,
+        "pct": 0.23
+      },
+      "world_later_lt_2h": {
+        "count": 555,
+        "pct": 2.72
+      },
+      "world_later_ge_2h": {
+        "count": 14540,
+        "pct": 71.38
+      },
+      "world_earlier": {
+        "count": 2882,
+        "pct": 14.15
+      },
+      "no_world": {
+        "count": 2346,
+        "pct": 11.52
+      }
+    },
+    "KingOfTheCups": {
+      "n": 4997,
+      "within_grace": {
+        "count": 12,
+        "pct": 0.24
+      },
+      "world_later_lt_2h": {
+        "count": 46,
+        "pct": 0.92
+      },
+      "world_later_ge_2h": {
+        "count": 3551,
+        "pct": 71.06
+      },
+      "world_earlier": {
+        "count": 723,
+        "pct": 14.47
+      },
+      "no_world": {
+        "count": 665,
+        "pct": 13.31
+      }
+    },
+    "KingOfTheSwords": {
+      "n": 6464,
+      "within_grace": {
+        "count": 10,
+        "pct": 0.15
+      },
+      "world_later_lt_2h": {
+        "count": 91,
+        "pct": 1.41
+      },
+      "world_later_ge_2h": {
+        "count": 3777,
+        "pct": 58.43
+      },
+      "world_earlier": {
+        "count": 1570,
+        "pct": 24.29
+      },
+      "no_world": {
+        "count": 1016,
+        "pct": 15.72
+      }
+    },
+    "KingOfThePentacles": {
+      "n": 6027,
+      "within_grace": {
+        "count": 9,
+        "pct": 0.15
+      },
+      "world_later_lt_2h": {
+        "count": 52,
+        "pct": 0.86
+      },
+      "world_later_ge_2h": {
+        "count": 3870,
+        "pct": 64.21
+      },
+      "world_earlier": {
+        "count": 1096,
+        "pct": 18.18
+      },
+      "no_world": {
+        "count": 1000,
+        "pct": 16.59
+      }
+    }
+  },
+  "unmarked_breakdown": {
+    "n": 26059,
+    "buckets": {
+      "no_named_ending": {
+        "count": 11034,
+        "pct": 42.34,
+        "flagged": 122
+      },
+      "named_not_devil": {
+        "count": 11451,
+        "pct": 43.94,
+        "flagged": 168
+      },
+      "devil_lt_4h": {
+        "count": 40,
+        "pct": 0.15,
+        "flagged": 4
+      },
+      "devil_4h_to_24h": {
+        "count": 56,
+        "pct": 0.21,
+        "flagged": 5
+      },
+      "devil_ge_24h": {
+        "count": 3478,
+        "pct": 13.35,
+        "flagged": 254
+      }
+    }
+  },
+  "route_availability": {
+    "TheStar": {
+      "n": 23626,
+      "panam": {
+        "count": 23234,
+        "pct": 98.34
+      },
+      "rogue": {
+        "count": 15242,
+        "pct": 64.51
+      },
+      "neither": {
+        "count": 292,
+        "pct": 1.24
+      },
+      "neither_no_later_ending": {
+        "count": 128,
+        "pct": 0.54
+      }
+    },
+    "TheSun": {
+      "n": 29673,
+      "panam": {
+        "count": 25055,
+        "pct": 84.44
+      },
+      "rogue": {
+        "count": 27993,
+        "pct": 94.34
+      },
+      "neither": {
+        "count": 959,
+        "pct": 3.23
+      },
+      "neither_no_later_ending": {
+        "count": 510,
+        "pct": 1.72
+      }
+    },
+    "Temperance": {
+      "n": 14289,
+      "panam": {
+        "count": 12089,
+        "pct": 84.6
+      },
+      "rogue": {
+        "count": 11727,
+        "pct": 82.07
+      },
+      "neither": {
+        "count": 754,
+        "pct": 5.28
+      },
+      "neither_no_later_ending": {
+        "count": 328,
+        "pct": 2.3
+      }
+    },
+    "TheDevil": {
+      "n": 6926,
+      "panam": {
+        "count": 3791,
+        "pct": 54.74
+      },
+      "rogue": {
+        "count": 3072,
+        "pct": 44.35
+      },
+      "neither": {
+        "count": 2802,
+        "pct": 40.46
+      },
+      "neither_no_later_ending": {
+        "count": 1127,
+        "pct": 16.27
+      }
+    },
+    "TheTower": {
+      "n": 7780,
+      "panam": {
+        "count": 6199,
+        "pct": 79.68
+      },
+      "rogue": {
+        "count": 5106,
+        "pct": 65.63
+      },
+      "neither": {
+        "count": 1299,
+        "pct": 16.7
+      },
+      "neither_no_later_ending": {
+        "count": 518,
+        "pct": 6.66
+      }
+    },
+    "TheWorld only (no ending achievement)": {
+      "n": 26059,
+      "panam": {
+        "count": 7930,
+        "pct": 30.43
+      },
+      "rogue": {
+        "count": 4956,
+        "pct": 19.02
+      },
+      "neither": {
+        "count": 17285,
+        "pct": 66.33
+      },
+      "neither_no_later_ending": {
+        "count": 7983,
+        "pct": 30.63
+      }
+    }
+  },
+  "pl_vs_main": {
+    "by_pl_status": {
+      "pl_before": {
+        "n": 27288,
+        "pct": {
+          "TheSun": 31.17,
+          "TheStar": 18.01,
+          "Temperance": 14.04,
+          "TheDevil": 3.32,
+          "TheWorld only (no ending achievement)": 5.55,
+          "TheTower": 27.91
+        },
+        "devil_plus_world_only": 8.87
+      },
+      "pl_after": {
+        "n": 43869,
+        "pct": {
+          "TheSun": 27.57,
+          "TheStar": 23.18,
+          "Temperance": 13.19,
+          "TheDevil": 8.1,
+          "TheWorld only (no ending achievement)": 27.69,
+          "TheTower": 0.26
+        },
+        "devil_plus_world_only": 35.8
+      },
+      "no_pl_ending": {
+        "n": 37196,
+        "pct": {
+          "TheSun": 24.38,
+          "TheStar": 22.97,
+          "Temperance": 12.56,
+          "TheDevil": 6.62,
+          "TheWorld only (no ending achievement)": 33.33,
+          "TheTower": 0.13
+        },
+        "devil_plus_world_only": 39.95
+      }
+    },
+    "by_pl_status_no_tower": {
+      "pl_before": {
+        "n": 19673,
+        "pct": {
+          "TheSun": 43.24,
+          "TheStar": 24.98,
+          "Temperance": 19.47,
+          "TheDevil": 4.61,
+          "TheWorld only (no ending achievement)": 7.7
+        },
+        "devil_plus_world_only": 12.31
+      },
+      "pl_after": {
+        "n": 43754,
+        "pct": {
+          "TheSun": 27.65,
+          "TheStar": 23.24,
+          "Temperance": 13.23,
+          "TheDevil": 8.12,
+          "TheWorld only (no ending achievement)": 27.76
+        },
+        "devil_plus_world_only": 35.89
+      },
+      "no_pl_ending": {
+        "n": 37146,
+        "pct": {
+          "TheSun": 24.42,
+          "TheStar": 23.0,
+          "Temperance": 12.57,
+          "TheDevil": 6.63,
+          "TheWorld only (no ending achievement)": 33.37
+        },
+        "devil_plus_world_only": 40.01
+      }
+    },
+    "pl_era_no_tower": {
+      "pl_before": {
+        "n": 19673,
+        "pct": {
+          "TheSun": 43.24,
+          "TheStar": 24.98,
+          "Temperance": 19.47,
+          "TheDevil": 4.61,
+          "TheWorld only (no ending achievement)": 7.7
+        },
+        "devil_plus_world_only": 12.31
+      },
+      "pl_after": {
+        "n": 34543,
+        "pct": {
+          "TheSun": 28.5,
+          "TheStar": 21.89,
+          "Temperance": 13.64,
+          "TheDevil": 8.51,
+          "TheWorld only (no ending achievement)": 27.45
+        },
+        "devil_plus_world_only": 35.96
+      },
+      "no_pl_ending": {
+        "n": 33220,
+        "pct": {
+          "TheSun": 24.74,
+          "TheStar": 22.72,
+          "Temperance": 12.83,
+          "TheDevil": 6.65,
+          "TheWorld only (no ending achievement)": 33.06
+        },
+        "devil_plus_world_only": 39.71
+      }
+    },
+    "pl_era_by_routes": {
+      "both": {
+        "pl_before": {
+          "n": 16412,
+          "pct": {
+            "TheSun": 46.18,
+            "TheStar": 25.37,
+            "Temperance": 19.58,
+            "TheDevil": 4.03,
+            "TheWorld only (no ending achievement)": 4.85
+          },
+          "devil_plus_world_only": 8.88
+        },
+        "pl_after": {
+          "n": 18319,
+          "pct": {
+            "TheSun": 43.14,
+            "TheStar": 24.94,
+            "Temperance": 17.64,
+            "TheDevil": 6.52,
+            "TheWorld only (no ending achievement)": 7.77
+          },
+          "devil_plus_world_only": 14.29
+        },
+        "no_pl_ending": {
+          "n": 14936,
+          "pct": {
+            "TheSun": 41.83,
+            "TheStar": 27.99,
+            "Temperance": 18.34,
+            "TheDevil": 3.62,
+            "TheWorld only (no ending achievement)": 8.22
+          },
+          "devil_plus_world_only": 11.84
+        }
+      },
+      "panam_only": {
+        "pl_before": {
+          "n": 1475,
+          "pct": {
+            "TheSun": 13.83,
+            "TheStar": 45.83,
+            "Temperance": 16.88,
+            "TheDevil": 6.71,
+            "TheWorld only (no ending achievement)": 16.75
+          },
+          "devil_plus_world_only": 23.46
+        },
+        "pl_after": {
+          "n": 5672,
+          "pct": {
+            "TheSun": 4.37,
+            "TheStar": 50.83,
+            "Temperance": 11.32,
+            "TheDevil": 7.85,
+            "TheWorld only (no ending achievement)": 25.63
+          },
+          "devil_plus_world_only": 33.48
+        },
+        "no_pl_ending": {
+          "n": 6029,
+          "pct": {
+            "TheSun": 3.93,
+            "TheStar": 53.81,
+            "Temperance": 11.39,
+            "TheDevil": 6.22,
+            "TheWorld only (no ending achievement)": 24.65
+          },
+          "devil_plus_world_only": 30.87
+        }
+      },
+      "rogue_only": {
+        "pl_before": {
+          "n": 958,
+          "pct": {
+            "TheSun": 56.58,
+            "TheStar": 4.07,
+            "Temperance": 27.56,
+            "TheDevil": 3.65,
+            "TheWorld only (no ending achievement)": 8.14
+          },
+          "devil_plus_world_only": 11.8
+        },
+        "pl_after": {
+          "n": 2358,
+          "pct": {
+            "TheSun": 57.76,
+            "TheStar": 0.42,
+            "Temperance": 21.97,
+            "TheDevil": 6.11,
+            "TheWorld only (no ending achievement)": 13.74
+          },
+          "devil_plus_world_only": 19.85
+        },
+        "no_pl_ending": {
+          "n": 2332,
+          "pct": {
+            "TheSun": 58.58,
+            "TheStar": 1.24,
+            "Temperance": 23.11,
+            "TheDevil": 4.93,
+            "TheWorld only (no ending achievement)": 12.14
+          },
+          "devil_plus_world_only": 17.07
+        }
+      },
+      "neither": {
+        "pl_before": {
+          "n": 828,
+          "pct": {
+            "TheSun": 21.98,
+            "TheStar": 4.47,
+            "Temperance": 12.56,
+            "TheDevil": 13.53,
+            "TheWorld only (no ending achievement)": 47.46
+          },
+          "devil_plus_world_only": 60.99
+        },
+        "pl_after": {
+          "n": 8194,
+          "pct": {
+            "TheSun": 4.08,
+            "TheStar": 1.23,
+            "Temperance": 3.93,
+            "TheDevil": 14.13,
+            "TheWorld only (no ending achievement)": 76.63
+          },
+          "devil_plus_world_only": 90.76
+        },
+        "no_pl_ending": {
+          "n": 9923,
+          "pct": {
+            "TheSun": 3.73,
+            "TheStar": 0.93,
+            "Temperance": 2.97,
+            "TheDevil": 11.88,
+            "TheWorld only (no ending achievement)": 80.49
+          },
+          "devil_plus_world_only": 92.37
+        }
+      }
+    },
+    "pl_era_both_routes_pct": {
+      "pl_before": 83.42,
+      "pl_after": 53.03,
+      "no_pl_ending": 44.96
+    },
+    "king_to_main_pl_before": {
+      "KingOfTheWands": {
+        "n": 13910,
+        "pct": {
+          "TheSun": 38.58,
+          "TheStar": 22.55,
+          "Temperance": 16.67,
+          "TheDevil": 3.54,
+          "TheWorld only (no ending achievement)": 6.48,
+          "TheTower": 12.16
+        },
+        "devil_plus_world_only": 10.03
+      },
+      "KingOfTheCups": {
+        "n": 3216,
+        "pct": {
+          "TheSun": 33.52,
+          "TheStar": 19.31,
+          "Temperance": 17.01,
+          "TheDevil": 3.92,
+          "TheWorld only (no ending achievement)": 6.81,
+          "TheTower": 19.43
+        },
+        "devil_plus_world_only": 10.73
+      },
+      "KingOfTheSwords": {
+        "n": 3988,
+        "pct": {
+          "TheSun": 20.16,
+          "TheStar": 11.89,
+          "Temperance": 9.38,
+          "TheDevil": 2.36,
+          "TheWorld only (no ending achievement)": 5.24,
+          "TheTower": 50.98
+        },
+        "devil_plus_world_only": 7.6
+      },
+      "KingOfThePentacles": {
+        "n": 3885,
+        "pct": {
+          "TheSun": 22.96,
+          "TheStar": 13.05,
+          "Temperance": 10.27,
+          "TheDevil": 2.37,
+          "TheWorld only (no ending achievement)": 3.53,
+          "TheTower": 47.82
+        },
+        "devil_plus_world_only": 5.89
+      }
+    },
+    "king_to_main_pl_before_no_tower": {
+      "KingOfTheWands": {
+        "n": 12218,
+        "pct": {
+          "TheSun": 43.93,
+          "TheStar": 25.68,
+          "Temperance": 18.98,
+          "TheDevil": 4.04,
+          "TheWorld only (no ending achievement)": 7.38
+        },
+        "devil_plus_world_only": 11.42
+      },
+      "KingOfTheCups": {
+        "n": 2591,
+        "pct": {
+          "TheSun": 41.61,
+          "TheStar": 23.97,
+          "Temperance": 21.11,
+          "TheDevil": 4.86,
+          "TheWorld only (no ending achievement)": 8.45
+        },
+        "devil_plus_world_only": 13.32
+      },
+      "KingOfTheSwords": {
+        "n": 1955,
+        "pct": {
+          "TheSun": 41.13,
+          "TheStar": 24.25,
+          "Temperance": 19.13,
+          "TheDevil": 4.81,
+          "TheWorld only (no ending achievement)": 10.69
+        },
+        "devil_plus_world_only": 15.5
+      },
+      "KingOfThePentacles": {
+        "n": 2027,
+        "pct": {
+          "TheSun": 44.01,
+          "TheStar": 25.01,
+          "Temperance": 19.68,
+          "TheDevil": 4.54,
+          "TheWorld only (no ending achievement)": 6.76
+        },
+        "devil_plus_world_only": 11.3
+      }
+    },
+    "main_to_king_pl_after": {
+      "TheSun": {
+        "n": 10868,
+        "pct": {
+          "KingOfTheWands": 54.55,
+          "KingOfTheCups": 11.62,
+          "KingOfTheSwords": 17.96,
+          "KingOfThePentacles": 15.87
+        }
+      },
+      "TheStar": {
+        "n": 9177,
+        "pct": {
+          "KingOfTheWands": 51.15,
+          "KingOfTheCups": 11.86,
+          "KingOfTheSwords": 20.49,
+          "KingOfThePentacles": 16.51
+        }
+      },
+      "Temperance": {
+        "n": 5072,
+        "pct": {
+          "KingOfTheWands": 50.35,
+          "KingOfTheCups": 12.82,
+          "KingOfTheSwords": 19.24,
+          "KingOfThePentacles": 17.59
+        }
+      },
+      "TheDevil": {
+        "n": 2965,
+        "pct": {
+          "KingOfTheWands": 50.69,
+          "KingOfTheCups": 12.51,
+          "KingOfTheSwords": 18.41,
+          "KingOfThePentacles": 18.38
+        }
+      },
+      "TheWorld only (no ending achievement)": {
+        "n": 11268,
+        "pct": {
+          "KingOfTheWands": 47.54,
+          "KingOfTheCups": 11.29,
+          "KingOfTheSwords": 24.51,
+          "KingOfThePentacles": 16.66
+        }
+      }
+    },
+    "rusher_kings": {
+      "finish_rate": {
+        "rushers": {
+          "n": 7983,
+          "finished_pl": 1464,
+          "finished_pl_pct": 18.34
+        },
+        "world_only_not_rushers": {
+          "n": 18076,
+          "finished_pl": 11772,
+          "finished_pl_pct": 65.13
+        },
+        "everyone_else": {
+          "n": 82294,
+          "finished_pl": 54854,
+          "finished_pl_pct": 66.66
+        }
+      },
+      "all": {
+        "rushers": {
+          "n": 1462,
+          "pct": {
+            "KingOfTheWands": 59.85,
+            "KingOfTheCups": 18.95,
+            "KingOfTheSwords": 12.93,
+            "KingOfThePentacles": 8.28
+          }
+        },
+        "world_only_not_rushers": {
+          "n": 11273,
+          "pct": {
+            "KingOfTheWands": 47.76,
+            "KingOfTheCups": 10.77,
+            "KingOfTheSwords": 24.68,
+            "KingOfThePentacles": 16.79
+          }
+        },
+        "everyone_else": {
+          "n": 51688,
+          "pct": {
+            "KingOfTheWands": 53.59,
+            "KingOfTheCups": 12.32,
+            "KingOfTheSwords": 17.72,
+            "KingOfThePentacles": 16.38
+          }
+        }
+      },
+      "by_order": {
+        "pl_before": {
+          "rushers": {
+            "n": 195,
+            "pct": {
+              "KingOfTheWands": 63.08,
+              "KingOfTheCups": 18.97,
+              "KingOfTheSwords": 12.82,
+              "KingOfThePentacles": 5.13
+            }
+          },
+          "world_only_not_rushers": {
+            "n": 1272,
+            "pct": {
+              "KingOfTheWands": 61.24,
+              "KingOfTheCups": 14.31,
+              "KingOfTheSwords": 14.47,
+              "KingOfThePentacles": 9.98
+            }
+          },
+          "everyone_else": {
+            "n": 23532,
+            "pct": {
+              "KingOfTheWands": 55.28,
+              "KingOfTheCups": 12.74,
+              "KingOfTheSwords": 16.06,
+              "KingOfThePentacles": 15.93
+            }
+          }
+        },
+        "pl_after": {
+          "rushers": {
+            "n": 1267,
+            "pct": {
+              "KingOfTheWands": 59.35,
+              "KingOfTheCups": 18.94,
+              "KingOfTheSwords": 12.94,
+              "KingOfThePentacles": 8.76
+            }
+          },
+          "world_only_not_rushers": {
+            "n": 10001,
+            "pct": {
+              "KingOfTheWands": 46.05,
+              "KingOfTheCups": 10.32,
+              "KingOfTheSwords": 25.98,
+              "KingOfThePentacles": 17.66
+            }
+          },
+          "everyone_else": {
+            "n": 28156,
+            "pct": {
+              "KingOfTheWands": 52.17,
+              "KingOfTheCups": 11.98,
+              "KingOfTheSwords": 19.1,
+              "KingOfThePentacles": 16.75
+            }
+          }
+        }
+      }
+    }
+  },
+  "rusher_playtime": {
+    "groups": {
+      "rushers": {
+        "n": 7983,
+        "mean_h": 73.2,
+        "median_h": 52.7,
+        "p25_h": 33.9,
+        "p75_h": 84.4
+      },
+      "everyone_else": {
+        "n": 100370,
+        "mean_h": 163.4,
+        "median_h": 120.8,
+        "p25_h": 79.0,
+        "p75_h": 189.4
+      },
+      "single_ending_not_rushers": {
+        "n": 36467,
+        "mean_h": 112.0,
+        "median_h": 87.5,
+        "p25_h": 58.9,
+        "p75_h": 131.2
+      },
+      "single_ending_thedevil": {
+        "n": 2072,
+        "mean_h": 108.1,
+        "median_h": 82.2,
+        "p25_h": 52.3,
+        "p75_h": 123.6
+      },
+      "single_ending_star_sun_temperance": {
+        "n": 29800,
+        "mean_h": 112.6,
+        "median_h": 88.3,
+        "p25_h": 59.8,
+        "p75_h": 132.0
+      }
+    },
+    "vs_everyone_else": {
+      "p_less": 0.805,
+      "p_value": 0.0
+    },
+    "vs_single_ending": {
+      "p_less": 0.707,
+      "p_value": 0.0
+    }
+  },
+  "completionists": {
+    "endings_unlocked": {
+      "main": {
+        "n": 116211,
+        "counts": {
+          "0": {
+            "count": 11036,
+            "pct": 9.5
+          },
+          "1": {
+            "count": 38772,
+            "pct": 33.36
+          },
+          "2": {
+            "count": 19834,
+            "pct": 17.07
+          },
+          "3": {
+            "count": 11899,
+            "pct": 10.24
+          },
+          "4": {
+            "count": 8875,
+            "pct": 7.64
+          },
+          "5": {
+            "count": 25795,
+            "pct": 22.2
+          }
+        }
+      },
+      "pl": {
+        "n": 82098,
+        "counts": {
+          "0": {
+            "count": 0,
+            "pct": 0.0
+          },
+          "1": {
+            "count": 39008,
+            "pct": 47.51
+          },
+          "2": {
+            "count": 12352,
+            "pct": 15.05
+          },
+          "3": {
+            "count": 4039,
+            "pct": 4.92
+          },
+          "4": {
+            "count": 26699,
+            "pct": 32.52
+          }
+        }
+      }
+    },
+    "sets": {
+      "main_all": {
+        "base_n": 116211,
+        "count": 25795,
+        "pct": 22.2,
+        "flagged": 4915,
+        "flagged_pct": 19.05,
+        "clean_base_n": 109136,
+        "clean_count": 20880,
+        "clean_pct": 19.13,
+        "median_playtime_h": 177.6,
+        "one_sweep_pct": 0.4,
+        "median_span_days": 42.1
+      },
+      "main_base_four": {
+        "base_n": 116211,
+        "count": 29600,
+        "pct": 25.47,
+        "flagged": 5473,
+        "flagged_pct": 18.49,
+        "clean_base_n": 109136,
+        "clean_count": 24127,
+        "clean_pct": 22.11,
+        "median_playtime_h": 174.6,
+        "one_sweep_pct": 3.22,
+        "median_span_days": 17.0
+      },
+      "pl_all": {
+        "base_n": 82098,
+        "count": 26699,
+        "pct": 32.52,
+        "flagged": 4814,
+        "flagged_pct": 18.03,
+        "clean_base_n": 75907,
+        "clean_count": 21885,
+        "clean_pct": 28.83,
+        "median_playtime_h": 170.0,
+        "one_sweep_pct": 7.64,
+        "median_span_days": 3.2
+      },
+      "everything": {
+        "base_n": 78309,
+        "count": 23339,
+        "pct": 29.8,
+        "flagged": 4697,
+        "flagged_pct": 20.13,
+        "clean_base_n": 72145,
+        "clean_count": 18642,
+        "clean_pct": 25.84,
+        "median_playtime_h": 174.6,
+        "one_sweep_pct": 0.05,
+        "median_span_days": 47.7
+      }
+    }
+  },
+  "sampling_bias": {
+    "playtime_bands": {
+      "0-10h": {
+        "public_pct": 2.74,
+        "private_pct": 4.05
+      },
+      "10-30h": {
+        "public_pct": 7.99,
+        "private_pct": 8.34
+      },
+      "30-60h": {
+        "public_pct": 16.56,
+        "private_pct": 15.64
+      },
+      "60-100h": {
+        "public_pct": 22.82,
+        "private_pct": 20.69
+      },
+      "100-200h": {
+        "public_pct": 32.14,
+        "private_pct": 29.53
+      },
+      "200-500h": {
+        "public_pct": 15.2,
+        "private_pct": 17.62
+      },
+      "500h+": {
+        "public_pct": 2.56,
+        "private_pct": 4.12
+      }
+    },
+    "median_playtime_h": {
+      "public": 99.8,
+      "private": 102.7
+    },
+    "first_ending_public": {
+      "TheSun": 27.39,
+      "TheStar": 21.8,
+      "Temperance": 13.19,
+      "TheDevil": 6.39,
+      "TheWorld only (no ending achievement)": 24.05,
+      "TheTower": 7.18
+    },
+    "first_ending_reweighted_to_private": {
+      "TheSun": 27.36,
+      "TheStar": 21.94,
+      "Temperance": 13.17,
+      "TheDevil": 6.42,
+      "TheWorld only (no ending achievement)": 23.95,
+      "TheTower": 7.16
+    },
+    "finish_rate_public_pct": 76.18,
+    "finish_rate_reweighted_pct": 75.46,
+    "hanako_no_finish_100h": 5046,
+    "devil_if_hidden_finishers_none_devil_pct": 29.09,
+    "devil_if_hidden_finishers_all_devil_pct": 33.54
+  },
+  "story_funnel": {
+    "main": {
+      "base_n": 152554,
+      "finished": 116211,
+      "not_finished": 36343,
+      "stages": [
+        {
+          "stage": "Became a mercenary (end of prologue)",
+          "achievement": "TheFool",
+          "reached": 149887,
+          "pct_of_base": 98.25,
+          "pct_of_previous": 98.25
+        },
+        {
+          "stage": "Stole the Relic (end of Act 1)",
+          "achievement": "TheLovers",
+          "reached": 146253,
+          "pct_of_base": 95.87,
+          "pct_of_previous": 97.58
+        },
+        {
+          "stage": "Interrogated Hellman (Act 2)",
+          "achievement": "TheWheelOfFortune",
+          "reached": 138902,
+          "pct_of_base": 91.05,
+          "pct_of_previous": 94.97
+        },
+        {
+          "stage": "Talked with Hanako (end of Act 2)",
+          "achievement": "TheHightPriestess",
+          "reached": 130464,
+          "pct_of_base": 85.52,
+          "pct_of_previous": 93.93
+        },
+        {
+          "stage": "Finished the main story (any main ending)",
+          "achievement": null,
+          "reached": 116211,
+          "pct_of_base": 76.18,
+          "pct_of_previous": 89.08
+        }
+      ],
+      "stopped_after": {
+        "No story milestone": {
+          "count": 986,
+          "pct_of_non_finishers": 2.71,
+          "median_playtime_h": 11.4
+        },
+        "Became a mercenary (end of prologue)": {
+          "count": 3362,
+          "pct_of_non_finishers": 9.25,
+          "median_playtime_h": 6.7
+        },
+        "Stole the Relic (end of Act 1)": {
+          "count": 7827,
+          "pct_of_non_finishers": 21.54,
+          "median_playtime_h": 19.4
+        },
+        "Interrogated Hellman (Act 2)": {
+          "count": 8650,
+          "pct_of_non_finishers": 23.8,
+          "median_playtime_h": 42.6
+        },
+        "Talked with Hanako (end of Act 2)": {
+          "count": 15518,
+          "pct_of_non_finishers": 42.7,
+          "median_playtime_h": 74.7
+        }
+      },
+      "most_common_stop": "Talked with Hanako (end of Act 2)"
+    },
+    "pl": {
+      "base_n": 104144,
+      "finished": 82098,
+      "not_finished": 22046,
+      "stages": [
+        {
+          "stage": "Saved President Myers (start)",
+          "achievement": "AllThePresidentsMen",
+          "reached": 103603,
+          "pct_of_base": 99.48,
+          "pct_of_previous": 99.48
+        },
+        {
+          "stage": "Defeated the Chimera (early)",
+          "achievement": "IHateSpider",
+          "reached": 102770,
+          "pct_of_base": 98.68,
+          "pct_of_previous": 99.2
+        },
+        {
+          "stage": "Finished Phantom Liberty (any King ending)",
+          "achievement": null,
+          "reached": 82098,
+          "pct_of_base": 78.83,
+          "pct_of_previous": 79.89
+        }
+      ],
+      "stopped_after": {
+        "No story milestone": {
+          "count": 0,
+          "pct_of_non_finishers": 0.0,
+          "median_playtime_h": null
+        },
+        "Saved President Myers (start)": {
+          "count": 830,
+          "pct_of_non_finishers": 3.76,
+          "median_playtime_h": 64.7
+        },
+        "Defeated the Chimera (early)": {
+          "count": 21216,
+          "pct_of_non_finishers": 96.24,
+          "median_playtime_h": 85.4
+        }
+      },
+      "most_common_stop": "Defeated the Chimera (early)"
+    }
+  }
+}

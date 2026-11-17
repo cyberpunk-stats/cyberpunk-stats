@@ -1,0 +1,7 @@
+kedro~=1.8.0
+kedro-datasets[pandas-sqlquerydataset,json-jsondataset]>=10.0
+requests>=2.31
+python-dotenv>=1.0   # optional: load STEAM_API_KEY from .env
+
+# development
+pytest>=8.0

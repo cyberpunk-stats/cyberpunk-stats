@@ -1,0 +1,5 @@
+# Thresholds for flagging records that look tool-assisted. "Clean" stats exclude flagged records.
+flags:
+  burst_count: 8           # this many achievements...
+  burst_window_s: 60       # ...within this many seconds, with an ending or TheWorld among them
+  low_playtime_mins: 900   # an ending on an account with less lifetime playtime than this (15h)

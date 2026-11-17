@@ -1,0 +1,37 @@
+# Raw input: the SQLite checkpoint written by `cyberpunk-stats-collect`. Not a secret, so the connection is inline.
+_checkpoint: &checkpoint
+  con: sqlite:///data/01_raw/checkpoint.sqlite
+
+checkpoint_players:
+  type: pandas.SQLQueryDataset
+  sql: SELECT steamid, playtime_forever, achievements_json FROM players
+  credentials: *checkpoint
+
+checkpoint_candidates:
+  type: pandas.SQLQueryDataset
+  sql: SELECT status, playtime_forever FROM candidates
+  credentials: *checkpoint
+
+checkpoint_state:
+  type: pandas.SQLQueryDataset
+  sql: SELECT key, value FROM state
+  credentials: *checkpoint
+
+# Per-player records hold SteamIDs, so they stay in memory and are never written out.
+# copy_mode assign: ~150k records are read by a dozen nodes; deep-copying them for each would be slow.
+player_records:
+  type: MemoryDataset
+  copy_mode: assign
+
+clean_player_records:
+  type: MemoryDataset
+  copy_mode: assign
+
+candidate_summary:
+  type: MemoryDataset
+  copy_mode: assign
+
+# Output: aggregates only, read by the dashboard.
+endings_summary:
+  type: json.JSONDataset
+  filepath: data/08_reporting/endings_summary.json

@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cyberpunk_stats"
+description = "Which Cyberpunk 2077 ending do players get first? Steam achievement timestamps, analysed with Kedro."
+readme = "README.md"
+requires-python = ">=3.10"
+dynamic = ["version"]
+dependencies = [
+    "kedro~=1.8.0",
+    "kedro-datasets[pandas-sqlquerydataset,json-jsondataset]>=10.0",
+    "requests>=2.31",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+cyberpunk-stats-collect = "cyberpunk_stats.collect.cli:main"
+cyberpunk-stats = "cyberpunk_stats.__main__:main"
+
+[project.entry-points."kedro.hooks"]
+
+[tool.setuptools.dynamic.version]
+attr = "cyberpunk_stats.__version__"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.kedro]
+package_name = "cyberpunk_stats"
+project_name = "cyberpunk-stats"
+kedro_init_version = "1.8.0"
+tools = "['None']"
+example_pipeline = "False"
+source_dir = "src"
