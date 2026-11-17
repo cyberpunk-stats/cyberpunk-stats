@@ -20,11 +20,16 @@
     const n = tip.node(), w = n.offsetWidth, h = n.offsetHeight;
     let x = ev.clientX + 14, y = ev.clientY + 14;
     if (x + w > window.innerWidth - 6) x = Math.max(6, ev.clientX - w - 14);
-    if (y + h > window.innerHeight - 6) y = Math.max(6, ev.clientY - h - 14);
+    if (y + h > window.innerHeight - 6) y = ev.clientY - h - 14;
+    // Keep the whole tooltip inside the frame; the frame is tall enough for it (see reserveTipSpace).
+    y = Math.max(6, Math.min(y, window.innerHeight - h - 6));
     tip.style("left", `${x}px`).style("top", `${y}px`);
   }
   function hideTip() { tip.style("opacity", 0); }
+  // Every tooltip a chart can show, so the frame can be made tall enough for the tallest one.
+  const tipSources = [];
   function hover(sel, html, group) {
+    tipSources.push(() => sel.data().map(html));
     sel.on("mouseenter", function (ev, d) {
       if (group) group.classed("dim", o => o !== d);
       showTip(ev, html(d));
@@ -351,10 +356,24 @@
     window.parent.postMessage({ type: "streamlit:iframe:setSize", width: document.documentElement.clientWidth, height: h }, "*");
   }
 
+  // The frame is sized to the chart, and a tooltip can't draw outside it. Short charts (the ending bars) are
+  // shorter than their tooltips, so make the chart area at least as tall as the tallest tooltip it can show.
+  function reserveTipSpace(root) {
+    const n = tip.node();
+    tip.style("visibility", "hidden").style("left", "0px").style("top", "0px");
+    let tallest = 0;
+    tipSources.forEach(src => src().forEach(html => { n.innerHTML = html; tallest = Math.max(tallest, n.offsetHeight); }));
+    tip.html("").style("visibility", null);
+    if (tallest + 12 > root.getBoundingClientRect().height) root.style.minHeight = `${tallest + 12}px`;
+  }
+
   function draw() {
     const root = document.getElementById("root");
     root.innerHTML = "";
+    root.style.minHeight = "";
+    tipSources.length = 0;
     window.CHARTS[window.SPEC.type](root, window.SPEC);
+    reserveTipSpace(root);
     setTimeout(reportSize, 0);
     setTimeout(reportSize, 250);
   }
